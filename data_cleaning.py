@@ -45,9 +45,12 @@ def detect_price(text: str) -> list[str]:
     word_map = {"one": 1.0, "two": 2.0, "three": 3.0, "four": 4.0, "five": 5.0, "six": 6.0, "seven": 7.0, 
                     "eight": 8.0, "nine": 9.0, "ten": 10.0, "eleven": 11.0, "twelve": 12.0, "thirteen": 13.0, 
                     "fourteen": 14.0, "fifteen": 15.0, "sixteen": 16.0, "seventeen": 17.0, "eighteen": 18.0, 
-                    "nineteen": 19.0, "twenty": 20.0, "quarter": 0.25, "half": 0.5, "dollar each": 1}
+                    "nineteen": 19.0, "twenty": 20.0, "quarter": 0.25, "half": 0.5, "thirty": 30.0}
     
     numbers += [word_map[word] for word in number_words if word in text.lower()]
+
+    if text.lower() == "dollar each":
+        numbers = [1.0]
 
     return numbers
 
@@ -59,11 +62,12 @@ def detect_capitilized(text: str) -> list[str]:
     return re.findall(r'[A-Z][a-zA-Z]*', text)
 
 def detect_movie(text: str) -> list[str]:
-    common_movies = ['spirited away', 'american youg boy', 'stranger things', 'shawarma legend', 'finding nemo', 'jiro dreams of sushi', 'east side sushi', 'home alone',
+    common_movies = ['spirited away', 'american young boy', 'stranger things', 'shawarma legend', 'finding nemo', 'jiro dreams of sushi', 'east side sushi', 'home alone',
                      'bbc food channel', 'ready player one', 'ratatouille', 'gilmore girls', 'goodfellas', 'chef', 'the avengers', 'middle eastern', 'mulan', 'za bebsi',
                      'isle of dogs', 'breakfast club', 'avengers', 'holes', 'shrek', 'hangover', 'polar express', 'elf', 'home alone', 'spider-man', 'superbad', 'monster inc',
                      'cloudy with a chance of meatballs', 'scott pilgrim vs the world', 'pleasant goat and big big wolf', 'minions: rise of gru', 'breaking bad', 'deadpool',
-                     'wolverine', 'your name', 'penguins of madagascar']
+                     'wolverine', 'your name', 'penguins of madagascar', 'teenage mutant ninja turtles', 'cars 2', 'big short', 'harry potter', 'spiderman', 'rattatouie',
+                     'malena', 'ninja turtle', 'little italy', 'godfather', 'toy story', 'good time', 'jaws']
     
     try:
         search = ia.search_movie(text.lower())
@@ -75,6 +79,9 @@ def detect_movie(text: str) -> list[str]:
         search = [movie for movie in common_movies if movie in text.lower()]
     else:
         search = [movie['title'] for movie in search]
+
+    if not search:
+        search = ['none']
 
     return search
 
@@ -162,11 +169,14 @@ def final_cleaning():
 
                 file.write(line)
 
+    df.hot_sauce_level = df.hot_sauce_level.fillna('none')
     df.to_csv("clean_results.csv")
 
 if __name__ == "__main__":
     #final_cleaning()
     df = pd.read_csv('clean_results.csv')
-    df.hot_sauce_level = df.hot_sauce_level.fillna('None')
-    print(df.isnull().sum())
+    df.hot_sauce_level = df.hot_sauce_level.fillna('none')
+
+    print(df.isna().sum())
+
     df.to_csv("clean_results.csv")
