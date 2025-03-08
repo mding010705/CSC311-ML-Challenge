@@ -1,4 +1,4 @@
-,id,food_complexity,num_ingredients,Q3: In what setting would you expect this food to be served? Please check all that apply,expected_cost,related_movie,paired_drink,associated_people,Q8: How much hot sauce would you add to this food item?,Label
+,id,food_complexity,num_ingredients,serving_setting,expected_cost,related_movie,paired_drink,associated_people,hot_sauce_level,Label
 0,716549,3,6.0,"Week day lunch,At a party,Late night snack",5.0,Cloudy with a Chance of Meatballs,Coke ,Friends,A little (mild),Pizza
 1,715742,4,2.0,"Week day lunch,At a party,Late night snack",5.0,,Coke,"Friends,Teachers,Strangers",,Pizza
 2,727333,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,Gundam I: The Live-Action Movie,cola,Friends,A moderate amount (medium),Pizza
@@ -115,7 +115,7 @@
 113,524803,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.5,Breaking Bad,Soda,"Friends,Teachers",,Pizza
 114,629712,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",17.0,Interstellar,Coca Cola,Friends,A little (mild),Pizza
 115,627505,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.0,Rush Hour,Pepsi,"Parents,Siblings",,Pizza
-116,526131,3,1.0,"Week day lunch,Weekend lunch,At a party,Late night snack",5.5,,pepsi,"Friends,Teachers",,Pizza
+116,526131,3,1.0,"Week day lunch,Weekend lunch,At a party,Late night snack",5.5,holes,pepsi,"Friends,Teachers",,Pizza
 117,607065,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Scooby-Doo,Coke,"Siblings,Friends",A little (mild),Pizza
 118,500077,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Back to the Future Part 2: Behind the Scenes,Diet coke,Teachers,,Pizza
 119,633350,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.0,Ratatouille,Coke,"Friends,Teachers,Strangers",A little (mild),Pizza
@@ -126,7 +126,7 @@
 124,840827,3,6.0,Week day dinner,25.0,Avengers: Doomsday,Coke,Friends,,Pizza
 125,604897,3,15.0,"Weekend lunch,At a party",25.0,Teenage Mutant Ninja Turtles,soda,"Friends,Teachers,Strangers",,Pizza
 126,525422,2,3.0,"Week day lunch,Weekend lunch,At a party,Late night snack",3.5,Spider-Man,Soda,Friends,,Pizza
-127,602560,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",25.0,,coke,Friends,A moderate amount (medium),Pizza
+127,602560,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",25.0,hangover,coke,Friends,A moderate amount (medium),Pizza
 128,738379,3,8.5,"Weekend lunch,At a party",20.0,Teenage Mutant Ninja Turtles,"Coke, iced tea.","Parents,Siblings,Friends",A little (mild),Pizza
 129,622023,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.0,Teenage Mutant Ninja Turtles,Coke Zero,Friends,,Pizza
 130,604770,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Spider-Man,coke,Friends,A little (mild),Pizza
@@ -143,13 +143,13 @@
 141,614089,2,4.0,"Week day dinner,Weekend dinner,At a party,Late night snack",20.0,The Godfather,Coke,Siblings,,Pizza
 142,607517,4,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",14.0,Recep Ivedik 2,Coke,"Siblings,Friends",A little (mild),Pizza
 143,714607,3,6.0,"Week day lunch,Weekend dinner,At a party,Late night snack",5.0,Venom: The Last Dance,Coke,"Siblings,Friends",,Pizza
-144,716650,4,7.5,"Week day dinner,At a party,Late night snack",6.583333333333333,,coca-cola,"Friends,Teachers,Strangers",A moderate amount (medium),Pizza
+144,716650,4,7.5,"Week day dinner,At a party,Late night snack",6.583333333333333,home alone,coca-cola,"Friends,Teachers,Strangers",A moderate amount (medium),Pizza
 145,497695,2,4.0,"Weekend dinner,At a party,Late night snack",5.0,Moneyball,Soda,Friends,A little (mild),Pizza
-146,496858,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.75,,kombucha,"Parents,Siblings,Friends,Teachers",A little (mild),Pizza
+146,496858,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.75,home alone,kombucha,"Parents,Siblings,Friends,Teachers",A little (mild),Pizza
 147,608688,2,3.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.5,Teenage Mutant Ninja Turtles,Soda,"Parents,Siblings,Friends,Teachers",,Pizza
 148,604386,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",20.0,Ratatouille,soft drink,"Parents,Friends",,Pizza
 149,628559,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,The Avengers: Wish You Were Here? - The Top Ten London Locations,Coke,Friends,,Pizza
-150,715152,3,7.0,"Weekend lunch,Weekend dinner,At a party,Late night snack",7.0,,pepsi,Friends,,Pizza
+150,715152,3,7.0,"Weekend lunch,Weekend dinner,At a party,Late night snack",7.0,hangover,pepsi,Friends,,Pizza
 151,604110,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Home Alone,Coca-Cola,"Parents,Friends",,Pizza
 152,629010,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.0,Coraline,Nestea,"Parents,Friends,Teachers,Strangers",A little (mild),Pizza
 153,605254,2,5.0,"Week day dinner,At a party,Late night snack",4.0,Coraline,Diet Coke,Friends,A moderate amount (medium),Pizza
@@ -196,10 +196,10 @@
 194,611716,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",7.0,Home Alone,coke,"Parents,Siblings",,Pizza
 195,193195,3,5.0,"Weekend dinner,At a party,Late night snack",5.0,21 Jump Street,Coca Cola,"Friends,Teachers",A little (mild),Pizza
 196,627530,2,7.0,"Week day lunch,Week day dinner,Weekend dinner,At a party",10.0,Free Guy,Coca-Cola,Friends,A little (mild),Pizza
-197,626479,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,,soda,"Parents,Friends",,Pizza
+197,626479,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,spider-man,soda,"Parents,Friends",,Pizza
 198,624540,3,3.0,"Week day lunch,Week day dinner,At a party,Late night snack",15.0,Untitled Harry Potter Series,bubble tea,"Friends,Strangers",A moderate amount (medium),Pizza
 199,625315,2,5.5,"Week day lunch,Week day dinner,At a party,Late night snack",7.0,Home Alone,Soft drink,"Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
-200,601941,4,4.0,"Week day lunch,At a party,Late night snack",15.0,,cococola,"Teachers,Strangers",I will have some of this food item with my hot sauce,Pizza
+200,601941,4,4.0,"Week day lunch,At a party,Late night snack",15.0,stranger things,cococola,"Teachers,Strangers",I will have some of this food item with my hot sauce,Pizza
 201,723968,5,21.0,"Week day lunch,Late night snack",10.0,The Godfather,Nestea,"Friends,Teachers",,Pizza
 202,715806,4,10.0,"Week day lunch,Weekend dinner,At a party",7.0,Soul,coke,"Parents,Siblings,Friends,Teachers",,Pizza
 203,720045,3,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,The Godfather,Water,"Friends,Teachers",A lot (hot),Pizza
@@ -218,12 +218,12 @@
 216,496344,1,8.0,"Week day lunch,At a party",3.0,Your Friendly Neighborhood Spider-Man,Coke,"Friends,Teachers",A little (mild),Pizza
 217,409723,2,11.0,"Week day lunch,At a party,Late night snack",7.0,Home Alone,Coke,"Parents,Siblings,Teachers",,Pizza
 218,630949,4,7.0,"Weekend lunch,Weekend dinner,At a party",10.0,The Lord of the Rings: The Rings of Power,Soda,"Siblings,Friends",,Pizza
-219,413014,3,7.0,"Week day lunch,Weekend dinner,At a party,Late night snack",5.666666666666667,,coca-cola,"Friends,Teachers",A little (mild),Pizza
+219,413014,3,7.0,"Week day lunch,Weekend dinner,At a party,Late night snack",5.666666666666667,superbad,coca-cola,"Friends,Teachers",A little (mild),Pizza
 220,310438,2,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,Home Alone,Coke,"Siblings,Friends,Teachers",,Pizza
 221,627430,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Home Alone,Coke,"Siblings,Friends,Strangers",A little (mild),Pizza
 222,526510,2,4.0,At a party,6.0,Home Alone,cola,Strangers,,Pizza
 223,390823,3,4.0,"Week day dinner,Weekend dinner,At a party,Late night snack",5.0,The Hangover,Coke,Friends,A little (mild),Pizza
-224,717116,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,El Camino,coke,Friends,A little (mild),Pizza
+224,717116,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,El Camino,diet coke,Friends,A little (mild),Pizza
 225,712143,3,6.0,"Week day lunch,Week day dinner,At a party",15.0,Little Italy,Cola,Parents,A little (mild),Pizza
 226,612538,4,6.0,"Week day lunch,Weekend dinner,At a party,Late night snack",3.0,Toy Story,Coca Cola,"Friends,Teachers",,Pizza
 227,627539,2,4.0,"Week day lunch,Weekend lunch,At a party",5.0,The Super Mario Bros. Movie,Coca Cola,"Siblings,Friends",A moderate amount (medium),Pizza
@@ -275,7 +275,7 @@
 273,724326,1,7.0,"Week day lunch,Weekend lunch",12.0,Star Wars: Episode V - The Empire Strikes Back,Water,Friends,,Shawarma
 274,616945,3,5.0,"Week day lunch,Weekend lunch",8.0,Ratatouille,sprite,Friends,A moderate amount (medium),Shawarma
 275,630962,3,5.0,"Week day lunch,Weekend lunch,At a party,Late night snack",7.5,SpiderMan: Into The SpiderVerse,Water,"Friends,Strangers",A little (mild),Shawarma
-276,715814,2,5.5,Week day lunch,6.5,,water,"Friends,Strangers",,Shawarma
+276,715814,2,5.5,Week day lunch,6.5,monster inc,water,"Friends,Strangers",,Shawarma
 277,502799,1,6.0,"Week day lunch,Weekend lunch",6.0,Slumdog Millionaire,Ice tea,Friends,A little (mild),Shawarma
 278,605278,4,4.0,"Week day lunch,At a party,Late night snack",7.0,Cleopatra,Sprite,Friends,A moderate amount (medium),Shawarma
 279,388888,4,10.0,"Week day lunch,Weekend lunch",12.0,The Avengers,iced tea,"Friends,Strangers",A moderate amount (medium),Shawarma
@@ -353,7 +353,7 @@ Soft drinks",Friends,A little (mild),Shawarma
 345,616568,2,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",15.0,I Dont Know,soda,Friends,A moderate amount (medium),Shawarma
 346,603838,3,10.0,"Week day lunch,Week day dinner",6.0,The Avengers,Lemonade,Friends,A little (mild),Shawarma
 347,719735,5,3.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.0,The Avengers,Water,"Friends,Teachers,Strangers",A lot (hot),Shawarma
-348,608062,3,7.0,Week day lunch,12.0,"Batman: The Dark Knight Returns, Part 2",Mango juice,Friends,A moderate amount (medium),Shawarma
+348,608062,3,7.0,Week day lunch,12.0,"Batman: The Dark Knight Returns, Part 1",Mango juice,Friends,A moderate amount (medium),Shawarma
 349,608704,5,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Coke,Friends,A lot (hot),Shawarma
 350,520383,3,6.0,"Week day lunch,Week day dinner,Weekend lunch",11.0,,Water,"Friends,Strangers",A lot (hot),Shawarma
 351,603793,2,10.0,"Week day lunch,Weekend lunch",20.0,The Avengers,water,"Parents,Friends,Teachers",A lot (hot),Shawarma
@@ -392,9 +392,9 @@ Soft drinks",Friends,A little (mild),Shawarma
 382,614089,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Coke,"Siblings,Friends",A moderate amount (medium),Shawarma
 383,607517,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",14.0,Avengers: Doomsday,Fruit Juice,Friends,A moderate amount (medium),Shawarma
 384,714607,3,5.0,Week day lunch,5.0,Aladin,Peach Green Tea,"Friends,Teachers",A little (mild),Shawarma
-385,716650,1,10.0,Week day lunch,5.333333333333333,,ginger ale,Strangers,A lot (hot),Shawarma
+385,716650,1,10.0,Week day lunch,5.333333333333333,avengers,ginger ale,Strangers,A lot (hot),Shawarma
 386,497695,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",12.0,Gladiator,Water,"Friends,Strangers",A moderate amount (medium),Shawarma
-387,496858,4,7.666666666666667,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,,,Friends,A moderate amount (medium),Shawarma
+387,496858,4,7.666666666666667,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,the avengers,mango lassi,Friends,A moderate amount (medium),Shawarma
 388,608688,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Soda,"Parents,Siblings,Friends",A little (mild),Shawarma
 389,604386,2,4.0,"Week day lunch,Weekend lunch",10.0,Avengers: Doomsday,water,Strangers,A little (mild),Shawarma
 390,628559,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",8.0,Iron Man,Soda,Strangers,A little (mild),Shawarma
@@ -411,7 +411,7 @@ Soft drinks",Friends,A little (mild),Shawarma
 401,629792,2,7.0,"Week day lunch,Weekend lunch",10.0,Avengers: Doomsday,pop,"Parents,Friends",A little (mild),Shawarma
 402,629025,3,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",20.0,The Avengers,Pepsi,Strangers,A moderate amount (medium),Shawarma
 403,524441,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,Avengers: Doomsday,Pepsi,Strangers,A little (mild),Shawarma
-404,389109,2,5.0,Week day lunch,20.0,,water,Strangers,,Shawarma
+404,389109,2,5.0,Week day lunch,20.0,cloudy with a chance of meatballs,water,Strangers,,Shawarma
 405,631216,3,8.0,Week day lunch,10.0,Avengers: Doomsday,lemonade,Friends,A little (mild),Shawarma
 406,738875,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,Deadpool & Wolverine,Water,"Siblings,Friends,Strangers",A moderate amount (medium),Shawarma
 407,634669,4,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",16.99,The Avengers,Wine,Strangers,A moderate amount (medium),Shawarma
@@ -445,10 +445,10 @@ Soft drinks",Friends,A little (mild),Shawarma
 435,611716,2,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",7.0,Captain America: The First Avenger,coke,Siblings,A little (mild),Shawarma
 436,193195,4,15.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",15.0,Avengers: Doomsday,Soda,"Friends,Strangers",A lot (hot),Shawarma
 437,627530,4,8.0,"Week day lunch,Weekend lunch,At a party",10.0,Arcane,Ginger Ale,Friends,I will have some of this food item with my hot sauce,Shawarma
-438,626479,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,,soda,Friends,A moderate amount (medium),Shawarma
+438,626479,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,avengers,soda,Friends,A moderate amount (medium),Shawarma
 439,624540,4,5.0,Week day lunch,4.5,Bahen Chawk,crush/cola,Friends,A moderate amount (medium),Shawarma
 440,625315,3,7.5,"Week day lunch,Week day dinner,Weekend lunch,Late night snack",12.0,The Avengers,Soft drink,"Parents,Siblings,Friends",A lot (hot),Shawarma
-441,601941,2,6.0,Week day lunch,14.0,,cococola,Friends,A lot (hot),Shawarma
+441,601941,2,6.0,Week day lunch,14.0,shawarma legend,cococola,Friends,A lot (hot),Shawarma
 442,723968,2,25.0,"Week day lunch,Week day dinner",10.0,Shazam!,Nestea,Friends,,Shawarma
 443,715806,3,5.0,"Week day lunch,Weekend lunch,Late night snack",10.0,Aladdin,sprite,Strangers,,Shawarma
 444,720045,2,8.0,"Week day lunch,Week day dinner",6.0,Avengers: Doomsday,Water,Strangers,A lot (hot),Shawarma
@@ -467,7 +467,7 @@ Soft drinks",Friends,A little (mild),Shawarma
 457,496344,5,3.0,Week day lunch,8.0,Avengers: Doomsday,Jarritos,"Siblings,Friends",A little (mild),Shawarma
 458,409723,3,15.0,"Week day lunch,Week day dinner,Weekend lunch",10.0,The Avengers,Lassi,Friends,A little (mild),Shawarma
 459,630949,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",7.0,Star Wars: Episode IV - A New Hope,Soda,"Parents,Siblings,Friends",A little (mild),Shawarma
-460,413014,2,8.5,"Week day lunch,Weekend lunch",6.0,,orange juice,"Friends,Strangers",A little (mild),Shawarma
+460,413014,2,8.5,"Week day lunch,Weekend lunch",6.0,scott pilgrim vs the world,orange juice,"Friends,Strangers",A little (mild),Shawarma
 461,310438,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Water,"Parents,Siblings",A lot (hot),Shawarma
 462,627430,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",8.0,The Avengers,Water,"Parents,Siblings",A lot (hot),Shawarma
 463,526510,3,8.0,"Week day lunch,Week day dinner,Weekend lunch",10.0,The Avengers,water,"Friends,Teachers",A moderate amount (medium),Shawarma
@@ -487,7 +487,7 @@ Soft drinks",Friends,A little (mild),Shawarma
 477,601693,3,7.0,"Week day lunch,Weekend lunch",7.0,The Avengers,Water,"Friends,Strangers",A little (mild),Shawarma
 478,517096,4,9.0,"Week day lunch,Weekend lunch,Late night snack",8.5,The Avengers,Nestea,Friends,A moderate amount (medium),Shawarma
 479,606821,2,8.0,"Week day lunch,Weekend lunch,Late night snack",5.0,Avengers: Doomsday,Water,Friends,A moderate amount (medium),Shawarma
-480,455047,2,4.0,"Week day lunch,Weekend lunch",8.0,Avengers: Doomsday,coke,Friends,A moderate amount (medium),Shawarma
+480,455047,2,4.0,"Week day lunch,Weekend lunch",8.0,Avengers: Doomsday,water,Friends,A moderate amount (medium),Shawarma
 481,625576,4,12.0,"Week day lunch,Late night snack",10.0,The Avengers,Water,"Siblings,Friends,Strangers",A moderate amount (medium),Shawarma
 482,716549,2,5.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",15.0,Spirited Away,Miso soup,Friends,A little (mild),Sushi
 483,715742,3,2.0,"Weekend dinner,At a party",6.0,Anime Impact: The Movies and Shows That Changed the World of Japanese Animation,Miso Soup,Friends,,Sushi
@@ -524,7 +524,7 @@ Soft drinks",Friends,A little (mild),Shawarma
 514,724326,4,5.0,"Weekend lunch,Weekend dinner,At a party",17.0,Naruto,Tea,"Siblings,Friends",A little (mild),Sushi
 515,616945,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",5.0,Rush Hour,water,Siblings,,Sushi
 516,630962,2,2.0,"Week day lunch,Weekend lunch,At a party",18.0,Jaws,Water,"Friends,Strangers",,Sushi
-517,715814,1,2.5,"Week day lunch,Weekend lunch,At a party,Late night snack",26.25,,beer,"Parents,Friends,Teachers",A moderate amount (medium),Sushi
+517,715814,1,2.5,"Week day lunch,Weekend lunch,At a party,Late night snack",26.25,jiro dreams of sushi,beer,"Parents,Friends,Teachers",A moderate amount (medium),Sushi
 518,502799,1,4.0,"Week day dinner,Weekend dinner",10.0,Rush Hour,Water,Friends,,Sushi
 519,605278,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The End of Evangelion in 5 Minutes,Tea,"Parents,Friends",,Sushi
 520,388888,5,5.0,"Week day dinner,Weekend dinner,At a party",20.0,Midnight Diner,Barley tea,"Parents,Friends,Teachers",,Sushi
@@ -607,12 +607,12 @@ Water","Parents,Siblings,Friends",,Sushi
 595,524803,2,2.5,"Weekend lunch,Weekend dinner",5.0,Tokyo Story,Green tea,Strangers,,Sushi
 596,629712,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",20.0,Parasite,Water,"Parents,Siblings,Friends",,Sushi
 597,627505,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",11.0,Inception,Water,Friends,A moderate amount (medium),Sushi
-598,526131,4,1.0,"Week day dinner,Weekend dinner,Late night snack",9.0,,water,"Parents,Siblings",,Sushi
+598,526131,4,1.0,"Week day dinner,Weekend dinner,Late night snack",9.0,pleasant goat and big big wolf,water,"Parents,Siblings",,Sushi
 599,607065,4,4.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party",20.0,The Karate Kid,Wine,"Parents,Friends,Strangers",A little (mild),Sushi
 600,500077,4,20.0,At a party,13.0,And Then There Were None,water,Strangers,A moderate amount (medium),Sushi
 601,633350,2,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.0,Your Name.,Green tea ,"Siblings,Friends",,Sushi
 602,601945,4,5.0,"Week day dinner,Weekend lunch,Weekend dinner",10.0,The Wolf of Wall Street,Wine,"Parents,Friends",A little (mild),Sushi
-603,629878,2,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",14.0,,Tea,"Parents,Friends",A lot (hot),Sushi
+603,629878,2,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",14.0,spirited away,Tea,"Parents,Friends",A lot (hot),Sushi
 604,712766,3,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.0,Deadpool & Wolverine,Tea,"Siblings,Friends",,Sushi
 605,603664,1,2.0,Week day dinner,9.0,Jiro Dreams of Sushi,Calpis,Parents,,Sushi
 606,840827,5,4.0,Weekend dinner,20.0,Falling in Love with Romance Movies,Water,"Parents,Friends",,Sushi
@@ -638,7 +638,7 @@ Water","Parents,Siblings,Friends",,Sushi
 626,716650,3,3.0,"Week day dinner,Weekend dinner",6.5,,water,"Parents,Siblings,Friends",A little (mild),Sushi
 627,497695,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",20.0,Crazy Rich Asians,Water,"Parents,Siblings,Friends",,Sushi
 628,496858,4,4.333333333333333,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",14.5,,tea,Friends,,Sushi
-629,608688,3,5.0,"Weekend lunch,Weekend dinner",15.0,,Tea,Friends,A moderate amount (medium),Sushi
+629,608688,3,5.0,"Weekend lunch,Weekend dinner",15.0,finding nemo,Tea,Friends,A moderate amount (medium),Sushi
 630,604386,3,3.0,"Week day dinner,Weekend dinner,At a party",30.0,Jiro Dreams of Sushi,tea,Friends,,Sushi
 631,628559,5,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",20.0,Spirited Away,Green tea,Parents,,Sushi
 632,715152,4,9.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",25.0,Untitled Dragon Ball & Animes Mix Movie,Bubble Tea,"Parents,Siblings,Friends",,Sushi
@@ -735,13 +735,13 @@ Water","Parents,Siblings,Friends",,Sushi
 723,747734,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",7.5,The Godfather,Soda ,"Siblings,Friends",A moderate amount (medium),Pizza
 724,517064,2,7.5,"Week day lunch,At a party",3.5,Teenage Mutant Ninja Turtles,Root-beer.,Parents,,Pizza
 725,387330,4,15.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,Wizards of Waverly Place: The Movie,7up,Friends,A little (mild),Pizza
-726,746750,3,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.0,,Pepsi,"Friends,Strangers",A little (mild),Pizza
+726,746750,3,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.0,home alone,Pepsi,"Friends,Strangers",A little (mild),Pizza
 727,629285,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",12.0,Home Alone,Coke,Friends,I will have some of this food item with my hot sauce,Pizza
 728,743488,4,4.0,"Week day lunch,Weekend lunch,At a party,Late night snack",5.0,Spider-Man 2,soda,"Parents,Siblings",,Pizza
 729,523710,2,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,Home Alone,Coke,"Parents,Siblings,Friends,Teachers",,Pizza
 730,635179,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",7.0,Avengers Civil War Stop Motion: End Game,Sprite,Friends,A little (mild),Pizza
 731,313562,1,8.0,"Weekend dinner,At a party,Late night snack",2.0,Fast & Furious,crush ,"Siblings,Friends",A moderate amount (medium),Pizza
-732,712670,2,2.25,"Weekend dinner,At a party,Late night snack",4.0,,coca-cola,Friends,A little (mild),Pizza
+732,712670,2,2.25,"Weekend dinner,At a party,Late night snack",4.0,ratatouille,coca-cola,Friends,A little (mild),Pizza
 733,635627,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",4.0,Rush Hour,Coke,"Friends,Teachers",,Pizza
 734,524485,4,10.0,"Week day lunch,Weekend lunch,At a party",7.5,Teenage Mutant Ninja Turtles,Coke,Friends,,Pizza
 735,632320,3,3.0,"Week day lunch,At a party",16.0,Teenage Mutant Ninja Turtles,coke,"Parents,Siblings,Friends",A moderate amount (medium),Pizza
@@ -775,7 +775,7 @@ Water","Parents,Siblings,Friends",,Sushi
 763,634468,2,3.0,"Week day dinner,Weekend dinner,At a party",30.0,Back to the Future,Soda/Pop,"Siblings,Teachers",A little (mild),Pizza
 764,522205,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Spider-Man,Sprite,"Parents,Siblings,Friends",A moderate amount (medium),Pizza
 765,5978,3,6.0,"Week day lunch,Week day dinner,At a party,Late night snack",4.0,Mr. Deeds,Water,"Friends,Teachers",,Pizza
-766,742611,2,4.25,"At a party,Late night snack",16.0,,"Pops, Orange Juice, Water.","Friends,Teachers,Strangers",,Pizza
+766,742611,2,4.25,"At a party,Late night snack",16.0,bbc food channel,"Pops, Orange Juice, Water.","Friends,Teachers,Strangers",,Pizza
 767,631198,3,7.0,"Week day lunch,Weekend lunch,At a party",20.0,Green Book,water,"Parents,Siblings,Friends,Strangers",A lot (hot),Pizza
 768,606150,2,5.0,"Week day lunch,Weekend lunch,At a party",8.0,Little Italy,Coca Cola.,Friends,,Pizza
 769,313577,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",7.0,Your Friendly Neighborhood Spider-Man,coke,"Parents,Siblings,Friends,Teachers",,Pizza
@@ -823,7 +823,7 @@ Water","Parents,Siblings,Friends",,Sushi
 811,714062,3,4.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party",20.0,The Hangover,Coke,Friends,A little (mild),Pizza
 812,629156,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Teenage Mutant Ninja Turtles,Soda,Friends,A little (mild),Pizza
 813,498563,4,9.0,"Weekend lunch,Weekend dinner,At a party",16.0,Home Alone,Water,Friends,,Pizza
-814,625319,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",3.0,Teenage Mutant Ninja Turtles,soda,"Friends,Teachers",A moderate amount (medium),Pizza
+814,625319,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",3.0,Teenage Mutant Ninja Turtles,water,"Friends,Teachers",A moderate amount (medium),Pizza
 815,723931,2,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Spider-Man,coke,"Siblings,Friends",,Pizza
 816,526497,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",6.0,Set It Up,Coke ,"Parents,Siblings,Friends,Teachers",A little (mild),Pizza
 817,630999,2,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",20.0,Set It Up,Coke,Teachers,,Pizza
@@ -859,7 +859,7 @@ Water","Parents,Siblings,Friends",,Sushi
 847,618700,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,The Godfather,soda,Friends,A little (mild),Pizza
 848,627792,3,3.0,"Weekend lunch,Weekend dinner,At a party",5.0,Spider-Man 2,Pepsi.,"Siblings,Friends",,Pizza
 849,712054,3,3.0,"Week day dinner,At a party",16.0,Untitled Harry Potter Series,Coke,Friends,,Pizza
-850,631881,2,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.5,,"Soda (i.e. Coke, Pepsi, etc.)",Friends,,Pizza
+850,631881,2,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.5,home alone,"Soda (i.e. Coke, Pepsi, etc.)",Friends,,Pizza
 851,716188,3,6.0,"At a party,Late night snack",18.5,Italian Movie,Coke,"Friends,Teachers",,Pizza
 852,628744,3,6.0,"Week day lunch,Weekend lunch,At a party,Late night snack",15.0,TMNT,Coca Cola,"Friends,Teachers",A little (mild),Pizza
 853,604132,4,5.0,"Week day lunch,Weekend lunch,At a party",8.0,Ratatouille,Soda,"Siblings,Friends",A moderate amount (medium),Pizza
@@ -888,7 +888,7 @@ Water","Parents,Siblings,Friends",,Sushi
 876,633097,3,8.0,"Week day lunch,Weekend dinner,At a party",5.0,American Pie,Cola,"Friends,Teachers",,Pizza
 877,605290,3,1.0,"Week day lunch,Week day dinner,Weekend dinner,At a party",5.0,Mean Girls,Sprindrift,Friends,,Pizza
 878,629869,3,5.0,At a party,2.0,Friday,Diet coke,Friends,A little (mild),Pizza
-879,632868,2,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.5,,coca-cola,"Parents,Siblings,Friends",A little (mild),Pizza
+879,632868,2,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.5,home alone,coca-cola,"Parents,Siblings,Friends",A little (mild),Pizza
 880,209691,2,5.0,"Week day lunch,Weekend lunch,At a party",5.5,,iced tea,"Friends,Teachers",,Pizza
 881,600915,4,5.0,"At a party,Late night snack",20.0,Toy Story,Water,Friends,,Pizza
 882,525420,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",15.0,Teenage Mutant Ninja Turtles,Coke,"Siblings,Friends,Strangers",A moderate amount (medium),Pizza
@@ -900,7 +900,7 @@ Water","Parents,Siblings,Friends",,Sushi
 888,206487,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.0,Ratatouille,soft drink,"Siblings,Friends,Teachers",A little (mild),Pizza
 889,68949,2,7.5,"Weekend dinner,At a party",14.5,Teenage Mutant Ninja Turtles,soda,"Siblings,Friends",A little (mild),Pizza
 890,419835,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,Cloudy with a Chance of Meatballs,Coke,"Siblings,Friends,Strangers",,Pizza
-891,745732,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",16.0,,coca cola. ,Strangers,,Pizza
+891,745732,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",16.0,ready player one,coca cola. ,Strangers,,Pizza
 892,543739,2,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.0,Teenage Mutant Ninja Turtles,Coke,"Siblings,Friends",,Pizza
 893,410380,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.0,Your Friendly Neighborhood Spider-Man,Soda,"Parents,Friends,Teachers",,Pizza
 894,385307,4,8.0,"Weekend dinner,At a party",3.0,Teenage Mutant Ninja Turtles,coke ,Friends,,Pizza
@@ -913,7 +913,7 @@ Water","Parents,Siblings,Friends",,Sushi
 901,634650,2,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,Spider-Man,Coke,"Siblings,Friends",A moderate amount (medium),Pizza
 902,632125,3,5.0,"Week day dinner,Weekend dinner,At a party,Late night snack",3.0,Cloudy with a Chance of Meatballs,Sprite,"Friends,Teachers",,Pizza
 903,626812,2,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",20.0,A Minecraft Movie,ice tea,Friends,,Pizza
-904,631109,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Late night snack",3.25,,"Soda, personally Sprite. ","Siblings,Friends",,Pizza
+904,631109,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Late night snack",3.25,gilmore girls,"Soda, personally Sprite. ","Siblings,Friends",,Pizza
 905,716766,2,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,Spider-Man,coca-cola,Friends,,Pizza
 906,494103,3,8.0,"Week day dinner,Weekend dinner,At a party,Late night snack",5.0,Teenage Mutant Ninja Turtles,Coca cola,Friends,A moderate amount (medium),Pizza
 907,628102,2,3.0,"Week day dinner,Weekend lunch,At a party",4.0,Happy Gilmore,Water,"Parents,Siblings,Friends",A little (mild),Pizza
@@ -928,7 +928,7 @@ Water","Parents,Siblings,Friends",,Sushi
 916,524890,3,9.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,Spider-Man 2,Sprite,"Siblings,Friends",,Pizza
 917,717411,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",3.0,Italian Movie,soft drink,Strangers,A little (mild),Pizza
 918,525311,3,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Die Hard,Soda,"Parents,Siblings",A little (mild),Pizza
-919,630967,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,The Social Network,cola,"Friends,Strangers",A little (mild),Pizza
+919,630967,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,The Social Network,wine,"Friends,Strangers",A little (mild),Pizza
 920,604969,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,The NeverEnding Story,Soda,"Parents,Siblings,Friends",A moderate amount (medium),Pizza
 921,524480,3,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.0,The Maze Runner,Mountain Dew,Friends,,Pizza
 922,630121,3,15.0,"Week day lunch,Weekend dinner,At a party",5.0,Home Alone,soft drinks,"Siblings,Friends,Teachers",A lot (hot),Pizza
@@ -944,10 +944,10 @@ Water","Parents,Siblings,Friends",,Sushi
 932,711854,2,6.0,"Week day lunch,Weekend dinner,At a party,Late night snack",23.0,Zootopia,Coke,Friends,A moderate amount (medium),Pizza
 933,739254,4,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",4.0,Home Alone,Sprite,Friends,,Pizza
 934,621555,3,5.333333333333333,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",17.0,I Don't Watch TV,ice tea,Friends,A lot (hot),Pizza
-935,602482,3,4.5,"Weekend lunch,Weekend dinner,At a party",5.0,,Soda,"Friends,Teachers",,Pizza
-936,630416,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.666666666666667,,water,"Parents,Siblings,Friends,Teachers,Strangers",I will have some of this food item with my hot sauce,Pizza
-937,505458,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",15.0,,Soft drink,Friends,,Pizza
-938,296589,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",2.5,The Terminator,soda,Friends,A little (mild),Pizza
+935,602482,3,4.5,"Weekend lunch,Weekend dinner,At a party",5.0,minions: rise of gru,Soda,"Friends,Teachers",,Pizza
+936,630416,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.666666666666667,ratatouille,water,"Parents,Siblings,Friends,Teachers,Strangers",I will have some of this food item with my hot sauce,Pizza
+937,505458,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",15.0,ratatouille,Soft drink,Friends,,Pizza
+938,296589,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",2.5,The Terminator,water,Friends,A little (mild),Pizza
 939,604826,3,6.0,"Week day lunch,Weekend lunch,At a party,Late night snack",3.5,Listener Dan About Home Alone Christmas Movie,water,Friends,,Pizza
 940,387820,4,5.5,Weekend lunch,,Men in Black,Diet coke,Teachers,A little (mild),Pizza
 941,603612,4,7.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party",15.0,Teenage Mutant Ninja Turtles,Water,"Parents,Strangers",,Pizza
@@ -959,7 +959,7 @@ Water","Parents,Siblings,Friends",,Sushi
 947,631902,2,3.0,"Week day lunch,Week day dinner,Weekend dinner,At a party",4.0,Your Friendly Neighborhood Spider-Man,Soda,"Parents,Friends,Teachers",A little (mild),Pizza
 948,312320,5,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.0,,coke,"Parents,Siblings,Friends,Teachers",A moderate amount (medium),Pizza
 949,519986,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.0,"Crazy, Stupid, Love.",Coke,"Friends,Strangers",A little (mild),Pizza
-950,626771,2,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.6666666666666665,,coke,"Parents,Siblings,Friends,Teachers",A moderate amount (medium),Pizza
+950,626771,2,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.6666666666666665,,diet coke,"Parents,Siblings,Friends,Teachers",A moderate amount (medium),Pizza
 951,407257,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.0,Teenage Mutant Ninja Turtles,"Soda
 
 Pop
@@ -975,7 +975,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 959,631069,4,12.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",6.0,Home Alone,Soft drink (coke/pepsi),Friends,A moderate amount (medium),Pizza
 960,634508,4,7.0,"Week day lunch,Week day dinner,Weekend dinner,At a party,Late night snack",3.0,Grown Ups,Coke,"Siblings,Friends",A little (mild),Pizza
 961,206744,2,6.5,"Weekend dinner,At a party",5.0,Spider-Man 2,Coke,"Parents,Siblings,Friends",,Pizza
-962,498213,3,5.0,"At a party,Late night snack",2.1,,coke,Friends,A little (mild),Pizza
+962,498213,3,5.0,"At a party,Late night snack",2.1,,diet coke,Friends,A little (mild),Pizza
 963,627496,3,8.0,"Weekend lunch,Weekend dinner,At a party",4.25,Home Alone,Coke,"Parents,Siblings,Friends",A little (mild),Pizza
 964,629659,1,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.0,Toy Story,Kraken Spiced Rum,"Friends,Strangers",A lot (hot),Pizza
 965,630190,2,5.0,"Week day lunch,Weekend lunch,At a party,Late night snack",3.0,,iced tea,"Parents,Friends",,Pizza
@@ -986,13 +986,13 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 970,518733,2,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Spider-Man 2,coke,"Parents,Siblings,Friends",A lot (hot),Pizza
 971,630378,3,8.5,"Week day lunch,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Home Alone 2: Lost in New York,Pepsi,Friends,A moderate amount (medium),Pizza
 972,631142,3,5.0,"Week day dinner,Weekend lunch,At a party,Late night snack",5.0,Your Friendly Neighborhood Spider-Man,Ginger Ale,"Friends,Teachers",A little (mild),Pizza
-973,519976,3,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,,Water,"Parents,Siblings,Friends,Teachers",,Pizza
+973,519976,3,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,goodfellas,Water,"Parents,Siblings,Friends,Teachers",,Pizza
 974,604991,3,9.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Toy Story,Ginger Ale,"Parents,Teachers,Strangers",A little (mild),Pizza
-975,522483,4,3.0,"Weekend dinner,At a party",10.0,A Minecraft Movie,soda,Friends,,Pizza
+975,522483,4,3.0,"Weekend dinner,At a party",10.0,A Minecraft Movie,water,Friends,,Pizza
 976,629723,2,4.0,"Week day dinner,Weekend dinner,At a party,Late night snack",8.0,Wayne's World,Diet Coke,Friends,,Pizza
 977,387522,5,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",15.0,Teenage Mutant Ninja Turtles,Coca Cola,"Friends,Strangers",A little (mild),Pizza
 978,613484,5,8.0,"Week day lunch,Weekend lunch",3.0,Avengers: Endgame,Coke,Friends,A lot (hot),Pizza
-979,388729,5,7.8,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,,tea,Friends,,Pizza
+979,388729,5,7.8,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,ratatouille,tea,Friends,,Pizza
 980,494373,1,5.5,"Weekend dinner,At a party",17.5,Cloudy with a Chance of Meatballs,coke zero,"Friends,Strangers",,Pizza
 981,630977,4,6.0,At a party,12.5,A Minecraft Movie,pop,Friends,,Pizza
 982,621982,3,5.0,Week day lunch,10.0,The Last Black Man in San Francisco,coke,Friends,A moderate amount (medium),Pizza
@@ -1008,12 +1008,12 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 992,411117,2,4.0,"Week day dinner,Weekend dinner,At a party,Late night snack",6.0,Do the Right Thing,Coca-Cola,"Parents,Siblings",,Pizza
 993,634430,3,4.0,"Week day dinner,Weekend lunch,Weekend dinner,At a party",3.0,Deadpool & Wolverine,Pepsi,Strangers,,Pizza
 994,631711,3,3.0,"Week day lunch,Weekend lunch,At a party,Late night snack",10.0,Ratatouille,Coke,"Parents,Siblings,Friends,Teachers,Strangers",A lot (hot),Pizza
-995,606010,3,3.3333333333333335,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.6666666666666665,,cola,"Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
-996,631436,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",3.2,,pepsi,"Parents,Siblings,Friends",,Pizza
+995,606010,3,3.3333333333333335,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",3.6666666666666665,breaking bad,water,"Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
+996,631436,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",3.2,cloudy with a chance of meatballs,pepsi,"Parents,Siblings,Friends",,Pizza
 997,633712,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",15.0,Spider-Man 2,Water,"Parents,Siblings,Friends",,Pizza
 998,609556,3,7.0,"Week day lunch,Weekend dinner,At a party,Late night snack",5.0,Ratatouille,Coke,"Friends,Teachers",A lot (hot),Pizza
 999,520090,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Space Jam,Coca-Cola,"Friends,Strangers",A little (mild),Pizza
-1000,602234,2,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.5,,cola,"Siblings,Friends",A little (mild),Pizza
+1000,602234,2,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.5,shrek,chocolate milk,"Siblings,Friends",A little (mild),Pizza
 1001,741592,3,12.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",2.99,Home Alone,Soda,"Siblings,Friends",,Pizza
 1002,628547,3,9.0,"Week day dinner,Weekend dinner,At a party,Late night snack",5.0,Ratatouille,Coca cola,"Friends,Teachers",A little (mild),Pizza
 1003,501513,4,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",15.0,Friends,Nestea,Friends,A moderate amount (medium),Pizza
@@ -1026,7 +1026,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1010,741658,3,4.0,"Week day lunch,Week day dinner",5.0,Ratatouille,Sprite,Friends,,Pizza
 1011,620745,4,17.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.5,Diary of a Wimpy Kid,Pop,"Parents,Siblings,Friends,Teachers",,Pizza
 1012,611932,3,10.0,"Week day lunch,At a party,Late night snack",8.0,Home Alone,Soda,"Friends,Strangers",,Pizza
-1013,635602,2,6.333333333333333,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",19.0,,"Soda - coke, sprite, crush, etc.","Parents,Siblings,Friends",I will have some of this food item with my hot sauce,Pizza
+1013,635602,2,6.333333333333333,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",19.0,chef,"Soda - coke, sprite, crush, etc.","Parents,Siblings,Friends",I will have some of this food item with my hot sauce,Pizza
 1014,619892,3,10.0,"Week day lunch,Week day dinner,Weekend dinner,At a party,Late night snack",16.0,Teenage Mutant Ninja Turtles,Pepsi,"Parents,Siblings,Friends",A moderate amount (medium),Pizza
 1015,529289,3,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Step Brothers,Coke,"Parents,Siblings,Friends",A little (mild),Pizza
 1016,630738,3,9.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,Rush Hour,pop,"Parents,Siblings,Friends",,Pizza
@@ -1038,7 +1038,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1022,603182,2,10.0,"Week day lunch,Weekend dinner,At a party",20.0,Teenage Mutant Ninja Turtles,Soda,"Parents,Siblings,Friends,Teachers",,Pizza
 1023,632117,3,3.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",6.5,Ratatouille,fanta,"Parents,Siblings,Friends,Strangers",,Pizza
 1024,630209,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",20.0,SpongeBob SquarePants,Coke,Friends,A little (mild),Pizza
-1025,413395,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",25.0,Marvel vs. DC: At the Movies,coke,Friends,A moderate amount (medium),Pizza
+1025,413395,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",25.0,Marvel vs. DC: At the Movies,juice,Friends,A moderate amount (medium),Pizza
 1026,386750,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,Marvel vs. DC: At the Movies,water,Parents,A little (mild),Pizza
 1027,617178,3,13.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",5.0,The Princess Diaries,soda,Parents,,Pizza
 1028,630128,1,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",4.0,Little Italy,soft drink,"Friends,Teachers",,Pizza
@@ -1060,7 +1060,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1044,606905,4,9.0,"Week day lunch,Week day dinner,Late night snack",11.99,Borat,pineapple fanta,"Friends,Strangers",A lot (hot),Shawarma
 1045,393424,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,Avengers: Doomsday,Coke,"Siblings,Friends",A moderate amount (medium),Shawarma
 1046,618333,4,6.5,"Week day lunch,Late night snack",8.0,Oppenheimer,Coca cola,Friends,A moderate amount (medium),Shawarma
-1047,628558,2,8.0,Week day lunch,12.0,,tap water.,Strangers,,Shawarma
+1047,628558,2,8.0,Week day lunch,12.0,the avengers,tap water.,Strangers,,Shawarma
 1048,613776,3,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",12.0,The Avengers,Diet Coke,Parents,A little (mild),Shawarma
 1049,317214,5,3.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",16.0,,,"Siblings,Friends",A moderate amount (medium),Shawarma
 1050,628093,4,6.0,Late night snack,12.0,Deadpool 2,Water.,Friends,,Shawarma
@@ -1124,7 +1124,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1108,519822,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",12.0,Nosferatu,Coca-cola,"Friends,Strangers",A lot (hot),Shawarma
 1109,600849,3,10.0,"Week day lunch,Weekend lunch",7.0,The Avengers,Water,"Siblings,Strangers",A little (mild),Shawarma
 1110,605148,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",13.0,The Avengers,pepsi,Friends,A moderate amount (medium),Shawarma
-1111,631600,5,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,,water,"Parents,Siblings,Friends",,Shawarma
+1111,631600,5,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,avengers,water,"Parents,Siblings,Friends",,Shawarma
 1112,716142,4,8.0,"Week day dinner,Weekend dinner",5.0,Avengers: Doomsday,Soda,Parents,A moderate amount (medium),Shawarma
 1113,525853,5,4.5,"Week day lunch,Weekend lunch,At a party",17.5,Alien,Orange juice,Strangers,,Shawarma
 1114,835124,3,7.0,"Week day dinner,Weekend dinner,Late night snack",9.0,The Avengers,Fanta,Parents,A moderate amount (medium),Shawarma
@@ -1134,7 +1134,7 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1118,714062,3,8.0,"Week day lunch,Weekend lunch",10.0,Avengers: Age of Ultron,Apple juice,Friends,A little (mild),Shawarma
 1119,629156,3,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.0,The Avengers,Mint lemonade,Friends,A moderate amount (medium),Shawarma
 1120,498563,3,13.0,"Week day lunch,Weekend lunch",12.0,Captain America: The First Avenger,Tea,Strangers,,Shawarma
-1121,625319,3,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",9.5,The Dictator,soda,"Parents,Siblings,Friends",A little (mild),Shawarma
+1121,625319,3,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",9.5,The Dictator,water,"Parents,Siblings,Friends",A little (mild),Shawarma
 1122,723931,3,10.0,"Week day lunch,Weekend lunch",15.0,Indiana Jones and the Dial of Destiny,coke,Friends,A little (mild),Shawarma
 1123,526497,3,10.0,"Week day lunch,Week day dinner,Weekend lunch,Late night snack",15.0,The Avengers,Ginger Ale,"Parents,Siblings,Friends",A lot (hot),Shawarma
 1124,630999,2,6.0,"Week day lunch,Week day dinner,Late night snack",15.0,The Avengers,Water,Strangers,A little (mild),Shawarma
@@ -1165,17 +1165,17 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1147,631496,4,5.0,"Week day lunch,Weekend lunch,At a party",10.0,The Avengers,Coke,Strangers,A moderate amount (medium),Shawarma
 1148,491374,1,6.0,"Week day lunch,Weekend lunch",10.5,The Avengers,Ginger Ale,Strangers,A little (mild),Shawarma
 1149,632051,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Dictator,Water,"Friends,Strangers",A moderate amount (medium),Shawarma
-1150,409930,3,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",15.0,,water,Strangers,,Shawarma
+1150,409930,3,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",15.0,middle eastern,water,Strangers,,Shawarma
 1151,632975,4,9.5,"Week day dinner,Weekend lunch",12.0,Barbie,Water,"Parents,Strangers",A lot (hot),Shawarma
 1152,407221,4,7.0,"Week day lunch,Week day dinner",10.0,Avengers: Doomsday,Pepsi,"Parents,Siblings,Friends",A lot (hot),Shawarma
 1153,204508,2,10.0,"Week day lunch,Weekend lunch,Late night snack",10.0,Avengers: Doomsday,coke,Friends,I will have some of this food item with my hot sauce,Shawarma
 1154,618700,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,soda,Friends,A moderate amount (medium),Shawarma
 1155,627792,3,4.0,"Week day lunch,Weekend lunch,At a party",8.0,The Avengers,Coca Cola.,Parents,A moderate amount (medium),Shawarma
 1156,712054,3,5.0,Week day lunch,16.0,Green Book,Nestea Iced Tea,Parents,A little (mild),Shawarma
-1157,631881,4,12.5,"Week day lunch,Weekend lunch",10.0,,soda,"Siblings,Friends",A moderate amount (medium),Shawarma
+1157,631881,4,12.5,"Week day lunch,Weekend lunch",10.0,the avengers,beer,"Siblings,Friends",A moderate amount (medium),Shawarma
 1158,716188,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",11.0,Middle Eastern Stories: Father,no drink,"Friends,Strangers",A little (mild),Shawarma
 1159,628744,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",12.5,Avengers: Doomsday,Water,Strangers,A moderate amount (medium),Shawarma
-1160,604132,3,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,The Avengers,Water,"Parents,Siblings",A moderate amount (medium),Shawarma
+1160,604132,3,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,Avengers: Doomsday,Water,"Parents,Siblings",A moderate amount (medium),Shawarma
 1161,629807,3,5.0,"Week day lunch,Week day dinner,Weekend lunch",10.0,Avengers: Doomsday,Water,Parents,A lot (hot),Shawarma
 1162,741428,3,5.0,"Week day lunch,Late night snack",8.0,Avengers: Doomsday,Water,Strangers,A little (mild),Shawarma
 1163,633024,2,9.0,"Week day lunch,Weekend lunch",10.0,,Sprite,Strangers,A little (mild),Shawarma
@@ -1201,8 +1201,8 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1183,633097,4,6.0,"Week day dinner,Weekend dinner,At a party,Late night snack",7.0,Kung Fu Panda,Lemonade,"Parents,Friends",A moderate amount (medium),Shawarma
 1184,605290,4,5.0,"Week day dinner,Weekend lunch,Weekend dinner",8.0,"Episode 22: I Can't Think Of Anything Funny, I Just Hate Perturabo",Soda,Strangers,,Shawarma
 1185,629869,2,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",15.0,Dune: Part Two,Diet coke,"Parents,Friends",A moderate amount (medium),Shawarma
-1186,632868,3,8.0,"Week day lunch,Weekend lunch",8.0,,pepsi,"Friends,Strangers",A lot (hot),Shawarma
-1187,209691,3,10.0,"Week day lunch,Weekend lunch",5.5,,iced tea,"Friends,Strangers",,Shawarma
+1186,632868,3,8.0,"Week day lunch,Weekend lunch",8.0,deadpool,pepsi,"Friends,Strangers",A lot (hot),Shawarma
+1187,209691,3,10.0,"Week day lunch,Weekend lunch",5.5,the avengers,iced tea,"Friends,Strangers",,Shawarma
 1188,600915,3,4.0,"Weekend lunch,Weekend dinner",10.0,Cars,Water,"Parents,Friends",,Shawarma
 1189,525420,5,8.0,"Week day lunch,Week day dinner,Weekend lunch",10.0,Borat,Laban,"Parents,Siblings",A lot (hot),Shawarma
 1190,414710,4,6.0,"Week day lunch,Weekend lunch",10.0,Avengers: Doomsday,7UP,"Siblings,Strangers",A lot (hot),Shawarma
@@ -1219,14 +1219,14 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1201,385307,2,5.0,"Week day lunch,Weekend lunch",10.0,The Avengers,coke,Strangers,A little (mild),Shawarma
 1202,634566,2,6.0,"Week day lunch,Week day dinner,At a party,Late night snack",15.0,Mufasa: The Lion King,Juice,"Parents,Siblings,Friends",A little (mild),Shawarma
 1203,625818,3,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,Avengers: Doomsday,Barbican,"Parents,Friends",A moderate amount (medium),Shawarma
-1204,631164,4,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",7.5,Aladdin,Water,Strangers,A moderate amount (medium),Shawarma
+1204,631164,4,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",7.5,Aladdin in Nasira's Revenge,Water,Strangers,A moderate amount (medium),Shawarma
 1205,603130,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,Deadpool & Wolverine,Canned soda,"Friends,Strangers",A little (mild),Shawarma
 1206,229211,2,7.0,"Week day lunch,Weekend lunch,At a party",6.0,The Avengers,Gingerale (Canada Dry),"Friends,Strangers",A moderate amount (medium),Shawarma
 1207,626849,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Pop/Soda,"Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1208,634650,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,Avengers: Doomsday,Coke,Friends,A moderate amount (medium),Shawarma
 1209,632125,2,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",2.5,Avengers: Doomsday,Water,"Parents,Strangers",A little (mild),Shawarma
 1210,626812,3,7.5,"Week day lunch,Week day dinner,Late night snack",15.0,A Minecraft Movie,soft drinks,Strangers,A little (mild),Shawarma
-1211,631109,4,9.0,"Week day lunch,Week day dinner,Weekend dinner,At a party",10.5,,Water,"Parents,Siblings",A moderate amount (medium),Shawarma
+1211,631109,4,9.0,"Week day lunch,Week day dinner,Weekend dinner,At a party",10.5,mulan,Water,"Parents,Siblings",A moderate amount (medium),Shawarma
 1212,716766,3,7.0,"Week day lunch,Weekend lunch",8.0,Dangal,coca-cola,"Friends,Strangers",A little (mild),Shawarma
 1213,494103,2,10.0,"Week day lunch,Week day dinner,Late night snack",15.0,The Avengers,Coca cola,"Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1214,628102,3,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",12.0,You Don't Mess with the Zohan,Water,"Parents,Friends",A moderate amount (medium),Shawarma
@@ -1258,8 +1258,8 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1240,739254,4,7.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,Aladdin,Water,Siblings,,Shawarma
 1241,621555,4,6.0,"Week day lunch,Weekend lunch",12.0,,pepsi,Friends,A lot (hot),Shawarma
 1242,602482,2,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",8.0,IDK,Soda,"Friends,Strangers",A lot (hot),Shawarma
-1243,630416,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,,Water :),"Friends,Teachers,Strangers",I will have some of this food item with my hot sauce,Shawarma
-1244,505458,4,2.0,"Week day dinner,Weekend dinner,Late night snack",10.0,,Soft,Strangers,A little (mild),Shawarma
+1243,630416,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",5.0,ratatouille,Water :),"Friends,Teachers,Strangers",I will have some of this food item with my hot sauce,Shawarma
+1244,505458,4,2.0,"Week day dinner,Weekend dinner,Late night snack",10.0,ratatouille,Soft,Strangers,A little (mild),Shawarma
 1245,296589,5,4.0,"Week day dinner,Weekend dinner",9.0,South Park: The End of Obesity,Water,"Parents,Friends",A moderate amount (medium),Shawarma
 1246,604826,4,7.0,"Week day lunch,Week day dinner,Weekend lunch",6.0,When I think about tomorrow - Rays of hope in the Climate Crisis,water,Siblings,A little (mild),Shawarma
 1247,387820,4,6.5,Weekend lunch,20.0,Yeh Jawaani Hai Deewani,fanta,Siblings,A little (mild),Shawarma
@@ -1270,9 +1270,9 @@ Coke","Parents,Siblings,Friends,Teachers,Strangers",A little (mild),Pizza
 1252,746466,2,7.0,"Week day lunch,Week day dinner,Weekend lunch",18.0,Rush Hour,Water,"Friends,Strangers",I will have some of this food item with my hot sauce,Shawarma
 1253,601737,4,4.0,"Week day lunch,Week day dinner,Weekend lunch",12.0,Lawrence of Arabia,coke,Strangers,A little (mild),Shawarma
 1254,631902,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",8.0,The Avengers,Water,"Parents,Siblings,Friends,Strangers",,Shawarma
-1255,312320,5,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.5,"309 - Andrew Horowitz, Horowitz & Company - I Think We're Starting To See A Little Bit Of What Happens When The Tide Goes Out",coke,"Parents,Siblings,Friends,Teachers",A moderate amount (medium),Shawarma
+1255,312320,5,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.5,"309 - Andrew Horowitz, Horowitz & Company - I Think We're Starting To See A Little Bit Of What Happens When The Tide Goes Out",water,"Parents,Siblings,Friends,Teachers",A moderate amount (medium),Shawarma
 1256,519986,4,8.0,"Week day lunch,Weekend lunch",11.0,Avengers: Doomsday,Sprite,"Friends,Strangers",A moderate amount (medium),Shawarma
-1257,626771,4,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,,coke,"Parents,Friends",A moderate amount (medium),Shawarma
+1257,626771,4,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,the avengers,water,"Parents,Friends",A moderate amount (medium),Shawarma
 1258,407257,4,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.0,The Avengers,"Soda
 
 Pop
@@ -1280,7 +1280,7 @@ Pop
 Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1259,626883,4,3.0,"Week day dinner,Weekend dinner",5.0,Star Wars: Episode IV - A New Hope,Water,"Parents,Siblings,Friends",A little (mild),Shawarma
 1260,727339,2,3.0,"Week day lunch,Week day dinner,Late night snack",10.0,The Avengers,Iced Tea,"Friends,Strangers",,Shawarma
-1261,631448,2,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",6.5,,Orange Juice/ Cold water,"Parents,Siblings,Friends,Strangers",A lot (hot),Shawarma
+1261,631448,2,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",6.5,ratatouille,Orange Juice/ Cold water,"Parents,Siblings,Friends,Strangers",A lot (hot),Shawarma
 1262,634885,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",11.0,The Shawshank Redemption,Water,"Siblings,Friends,Strangers",,Shawarma
 1263,619932,3,10.0,"Week day lunch,Weekend lunch,Late night snack",11.0,The Shawshank Redemption,Juice,"Parents,Strangers",A little (mild),Shawarma
 1264,601986,4,13.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",12.36,Furiosa: A Mad Max Saga,Coke,Strangers,A moderate amount (medium),Shawarma
@@ -1288,7 +1288,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1266,631069,3,10.0,"Week day lunch,Week day dinner",12.0,I Don't Know How She Does It,Soft Drinks (soda),Friends,A moderate amount (medium),Shawarma
 1267,634508,3,5.0,"Week day lunch,Week day dinner,Late night snack",9.0,Aladdin,Coke,Friends,A lot (hot),Shawarma
 1268,206744,3,5.0,Weekend lunch,10.0,The Avengers,Mango juice,"Siblings,Friends",A moderate amount (medium),Shawarma
-1269,498213,4,8.0,"Week day lunch,Week day dinner,Weekend dinner",6.333333333333333,,coke,"Siblings,Friends",A moderate amount (medium),Shawarma
+1269,498213,4,8.0,"Week day lunch,Week day dinner,Weekend dinner",6.333333333333333,middle eastern,diet coke,"Siblings,Friends",A moderate amount (medium),Shawarma
 1270,627496,2,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",13.0,Avengers: Endgame,Fanta,"Friends,Strangers",A lot (hot),Shawarma
 1271,629659,3,15.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.0,Avengers: Endgame,Mango Juice,"Parents,Siblings,Friends",A lot (hot),Shawarma
 1272,630190,2,6.0,Week day lunch,8.0,"When Flowers Bloom, I Think of the Moon",iced tea,"Friends,Strangers",A little (mild),Shawarma
@@ -1305,7 +1305,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1283,629723,4,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",13.0,The Whale,Pepsi,"Siblings,Friends",A lot (hot),Shawarma
 1284,387522,3,5.0,"Week day lunch,Week day dinner,Late night snack",15.0,Avengers: Doomsday,Coca Cola,Friends,A moderate amount (medium),Shawarma
 1285,613484,4,6.0,"Weekend lunch,Weekend dinner",8.0,Chinese Zodiac,Water,Strangers,A lot (hot),Shawarma
-1286,388729,1,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",17.5,,fruit tea,Friends,,Shawarma
+1286,388729,1,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",17.5,ratatouille,fruit tea,Friends,,Shawarma
 1287,494373,3,10.0,Week day lunch,12.0,The Avengers,Coke zero,Friends,A moderate amount (medium),Shawarma
 1288,630977,5,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",15.0,A Minecraft Movie,Sprite,"Parents,Siblings,Friends",I will have some of this food item with my hot sauce,Shawarma
 1289,621982,2,3.0,Weekend dinner,12.0,The Avengers,coke,Friends,A moderate amount (medium),Shawarma
@@ -1321,12 +1321,12 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1299,411117,4,10.0,"Week day dinner,Weekend lunch,Weekend dinner,Late night snack",9.0,The Avengers,Mango Juice,"Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1300,634430,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",8.0,The Avengers,Pepsi,"Parents,Siblings",A little (mild),Shawarma
 1301,631711,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",3.0,Sonic the Hedgehog 3,Coke,Strangers,A lot (hot),Shawarma
-1302,606010,4,6.0,"Week day lunch,Weekend lunch,Late night snack",8.0,,pepsi,"Friends,Strangers",A lot (hot),Shawarma
-1303,631436,4,8.666666666666666,"Week day dinner,Weekend dinner",6.5,,mountain dew,Strangers,A little (mild),Shawarma
+1302,606010,4,6.0,"Week day lunch,Weekend lunch,Late night snack",8.0,za bebsi,pepsi,"Friends,Strangers",A lot (hot),Shawarma
+1303,631436,4,8.666666666666666,"Week day dinner,Weekend dinner",6.5,the avengers,mountain dew,Strangers,A little (mild),Shawarma
 1304,633712,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,The Avengers,Water,"Parents,Siblings,Friends",,Shawarma
 1305,609556,4,14.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,Aladdin,Water,"Friends,Strangers",A lot (hot),Shawarma
 1306,520090,5,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",9.0,Avengers: Doomsday,Barbican,Friends,A moderate amount (medium),Shawarma
-1307,602234,2,3.6666666666666665,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,,water,"Parents,Friends",A moderate amount (medium),Shawarma
+1307,602234,2,3.6666666666666665,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.0,shrek,water,"Parents,Friends",A moderate amount (medium),Shawarma
 1308,741592,4,8.0,"Week day dinner,Weekend lunch,Weekend dinner",9.99,The Avengers,Juice,"Parents,Strangers",A moderate amount (medium),Shawarma
 1309,628547,4,12.0,"Week day lunch,Weekend lunch,Late night snack",15.0,The Avengers,Water,"Siblings,Friends",A lot (hot),Shawarma
 1310,501513,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,3 Idiots,Sprite,Strangers,,Shawarma
@@ -1351,11 +1351,11 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1329,603182,3,15.0,"Week day lunch,Weekend lunch,Weekend dinner",15.0,Fast & Furious,Soda,"Parents,Siblings,Friends",A little (mild),Shawarma
 1330,632117,3,8.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",6.0,Ratatouille,Water.,"Parents,Siblings,Strangers",A lot (hot),Shawarma
 1331,630209,3,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,The Avengers,Coke,Parents,,Shawarma
-1332,413395,3,7.0,"Week day lunch,Week day dinner",20.0,Marvel vs. DC: At the Movies,coke,Friends,A little (mild),Shawarma
+1332,413395,3,7.0,"Week day lunch,Week day dinner",20.0,Marvel vs. DC: At the Movies,juice,Friends,A little (mild),Shawarma
 1333,386750,3,3.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",17.5,Burnt,cola,Friends,,Shawarma
 1334,617178,3,5.333333333333333,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,"Melanie Persson, Author Of 'The Very Hungry Coeliac' | ""A Love Letter To The Food I Thought I Couldn't Have""",water,"Parents,Teachers",A lot (hot),Shawarma
 1335,630128,1,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.0,The Avengers,soft drink,Friends,I will have some of this food item with my hot sauce,Shawarma
-1336,628736,4,6.5,"Week day lunch,Weekend lunch",,,water,"Friends,Strangers",A lot (hot),Shawarma
+1336,628736,4,6.5,"Week day lunch,Weekend lunch",,avengers,water,"Friends,Strangers",A lot (hot),Shawarma
 1337,747734,3,5.0,"Week day dinner,Weekend dinner",16.0,Ponyo,sake,Friends,,Sushi
 1338,517064,4,4.0,"Week day lunch,Week day dinner,Weekend dinner",1.5,Kung Fu Panda,Water,"Parents,Siblings",,Sushi
 1339,387330,1,4.0,"Week day dinner,Weekend dinner,Late night snack",13.0,Rush Hour 3,Rice wine,"Parents,Siblings",A little (mild),Sushi
@@ -1365,7 +1365,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1343,523710,4,7.5,"Week day dinner,Weekend lunch,Weekend dinner,At a party",12.0,"Monsters, Inc.",Coke,"Friends,Strangers",A little (mild),Sushi
 1344,635179,5,5.0,"Week day dinner,Weekend dinner,Late night snack",13.0,John Wick,Water,"Parents,Siblings",,Sushi
 1345,313562,4,6.0,"Week day lunch,Weekend lunch",25.0,Fast & Furious,water ,"Parents,Siblings,Friends",A little (mild),Sushi
-1346,712670,1,2.0,"Weekend dinner,Late night snack",1.0,,water,Friends,A little (mild),Sushi
+1346,712670,1,2.0,"Weekend dinner,Late night snack",1.0,your name,water,Friends,A little (mild),Sushi
 1347,635627,4,5.0,"Week day lunch,Week day dinner,Weekend dinner",15.0,Kung Fu Panda,Water,Strangers,,Sushi
 1348,524485,2,6.0,"Week day lunch,Weekend lunch,At a party,Late night snack",40.0,Finding Nemo,Coke,Friends,,Sushi
 1349,632320,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",9.0,Your Name.,water,"Parents,Siblings",A little (mild),Sushi
@@ -1373,7 +1373,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1351,606905,5,5.0,Weekend dinner,20.99,Rush Hour,misso soup,"Parents,Friends",,Sushi
 1352,393424,5,5.0,"Week day dinner,Weekend dinner",10.0,Rush Hour 2,Sake,Strangers,A little (mild),Sushi
 1353,618333,1,4.333333333333333,"Weekend lunch,Weekend dinner,At a party",12.0,Rush Hour 2,Soju,Friends,A lot (hot),Sushi
-1354,628558,2,5.0,"Weekend lunch,Weekend dinner,At a party",25.0,,miso soup,"Parents,Siblings",,Sushi
+1354,628558,2,5.0,"Weekend lunch,Weekend dinner,At a party",25.0,chef,miso soup,"Parents,Siblings",,Sushi
 1355,613776,4,5.0,"Weekend lunch,Weekend dinner",7.0,John Wick: Chapter 3 - Parabellum,Jasmine Tea,Parents,,Sushi
 1356,317214,5,5.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",20.0,I Really Don't Think I Can Make This Movie,tea,"Parents,Siblings,Friends",A little (mild),Sushi
 1357,628093,5,6.0,Weekend lunch,30.0,Cars 2,Water,"Parents,Siblings,Friends",A moderate amount (medium),Sushi
@@ -1437,11 +1437,11 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1415,519822,4,5.0,"Week day lunch,Week day dinner",15.0,Madagascar,Water,"Siblings,Friends",A lot (hot),Sushi
 1416,600849,5,5.0,"Week day lunch,Weekend lunch,Weekend dinner",5.0,Rush Hour,Water,"Siblings,Friends",,Sushi
 1417,605148,5,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",8.0,"Monsters, Inc.","Water, green tea","Siblings,Friends",,Sushi
-1418,631600,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,,Water,Friends,,Sushi
+1418,631600,2,7.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",10.0,penguins of madagascar,Water,Friends,,Sushi
 1419,716142,5,5.0,Week day lunch,10.0,Kill Bill: Vol. 1,Green Tea,"Parents,Siblings",A lot (hot),Sushi
 1420,525853,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",12.5,Finding Nemo,Water,"Friends,Strangers",,Sushi
 1421,835124,5,4.0,"Week day lunch,Weekend lunch,Weekend dinner",10.0,Pokémon,Green Tea,"Parents,Friends",,Sushi
-1422,634764,4,5.0,"Week day lunch,Late night snack",15.0,9-1-1,Water,Friends,A little (mild),Sushi
+1422,634764,4,5.0,"Week day lunch,Late night snack",15.0,,Water,Friends,A little (mild),Sushi
 1423,630117,4,1.5,"Week day lunch,Weekend lunch,Weekend dinner",1.0,The Japanese Movie,Hot matcha,Parents,,Sushi
 1424,631531,3,2.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",17.5,Jiro Dreams of Sushi,water,Friends,,Sushi
 1425,714062,4,3.0,"Week day dinner,Weekend dinner",15.0,James Bond Jr.,Green Tea,Siblings,,Sushi
@@ -1471,7 +1471,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1449,718026,5,4.0,"Week day dinner,Weekend dinner",20.0,The Fast and the Furious: Tokyo Drift,pepsi,"Parents,Friends",,Sushi
 1450,616713,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",25.0,"Interview: Author Ben Mezrich - Bitcoin Billionaires Book & Upcoming Movie, Billions TV Show & Bitcoin",Sake,"Parents,Siblings,Friends",,Sushi
 1451,602533,2,4.0,"Week day lunch,Week day dinner,Weekend dinner",10.0,Rush Hour,Water,Parents,,Sushi
-1452,522345,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.5,Madagascar: Escape 2 Africa,,"Parents,Friends",A moderate amount (medium),Sushi
+1452,522345,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",8.5,Madagascar: Escape 2 Africa,soy sauce,"Parents,Friends",A moderate amount (medium),Sushi
 1453,629758,4,5.0,"Week day dinner,Weekend dinner",17.0,Weathering with You,tea,"Parents,Siblings",,Sushi
 1454,631496,3,4.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,The Fast and the Furious: Tokyo Drift,Water,Friends,A little (mild),Sushi
 1455,491374,3,2.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",17.5,The Fast and the Furious: Tokyo Drift,Hot Tea,"Parents,Friends",,Sushi
@@ -1512,8 +1512,8 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1490,633097,2,5.0,"Week day lunch,Week day dinner",6.0,Train to Busan,Sake,"Parents,Friends",A little (mild),Sushi
 1491,605290,3,5.0,"Week day lunch,Week day dinner,Weekend dinner,At a party,Late night snack",10.0,Love Hard,Matcha tea,Friends,,Sushi
 1492,629869,4,5.0,Weekend dinner,20.0,Shōgun,diet brisk,Siblings,A little (mild),Sushi
-1493,632868,5,6.5,"Weekend lunch,Weekend dinner,At a party",3.5,,water,"Siblings,Friends",,Sushi
-1494,209691,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",8.0,,green tea,"Friends,Teachers,Strangers",,Sushi
+1493,632868,5,6.5,"Weekend lunch,Weekend dinner,At a party",3.5,finding nemo,water,"Siblings,Friends",,Sushi
+1494,209691,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",8.0,your name,green tea,"Friends,Teachers,Strangers",,Sushi
 1495,600915,3,7.0,At a party,20.0,Kung Fu Panda,Water,Strangers,,Sushi
 1496,525420,2,3.0,"Week day lunch,Late night snack",8.0,My Neighbor Totoro,Ramune,"Friends,Strangers",,Sushi
 1497,414710,5,4.0,"At a party,Late night snack",12.0,Rush Hour,Water,"Teachers,Strangers",A little (mild),Sushi
@@ -1537,7 +1537,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1515,634650,4,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",15.0,Madagascar,Water,"Parents,Siblings,Friends",,Sushi
 1516,632125,4,4.0,"Week day dinner,Weekend dinner",10.0,Turning Red,Water,"Friends,Strangers",,Sushi
 1517,626812,1,2.5,"Week day lunch,Weekend lunch,At a party",20.0,A Minecraft Movie,water,Parents,,Sushi
-1518,631109,5,9.333333333333334,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",14.0,,water,Friends,,Sushi
+1518,631109,5,9.333333333333334,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",14.0,chef,water,Friends,,Sushi
 1519,716766,4,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,The Solitary Gourmet,barley tea,"Parents,Siblings,Friends",,Sushi
 1520,494103,2,7.0,"Week day dinner,Weekend dinner,Late night snack",9.0,Blade Runner,Coca cola,"Parents,Siblings,Friends",,Sushi
 1521,628102,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,The Fast and the Furious: Tokyo Drift,Water,Parents,,Sushi
@@ -1569,7 +1569,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1547,739254,4,5.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",10.0,Ultraman: Rising,Water,Strangers,A little (mild),Sushi
 1548,621555,3,3.0,"Week day dinner,Weekend dinner",11.0,And Then There Were None,water,"Parents,Siblings",,Sushi
 1549,602482,2,3.5,"Week day lunch,Weekend lunch,Weekend dinner,At a party,Late night snack",15.0,21 Jump Street,Water,"Parents,Friends",,Sushi
-1550,630416,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,,Water ,"Friends,Strangers",I will have some of this food item with my hot sauce,Sushi
+1550,630416,4,8.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,ratatouille,Water ,"Friends,Strangers",I will have some of this food item with my hot sauce,Sushi
 1551,505458,2,2.0,"Week day dinner,Weekend dinner,At a party,Late night snack",3.0,Japanese Story,Tea,"Siblings,Friends",,Sushi
 1552,296589,3,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",10.0,Pearl Harbor,"Water, sake","Parents,Friends,Teachers,Strangers",,Sushi
 1553,604826,3,6.0,"Week day lunch,Weekend lunch,Weekend dinner",8.0,,green tea,Teachers,,Sushi
@@ -1581,9 +1581,9 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1559,746466,5,4.0,"Week day dinner,Weekend lunch,Weekend dinner",13.0,Your Name.,Green Tea,Parents,,Sushi
 1560,601737,3,5.0,"Week day lunch,Weekend lunch,Weekend dinner",15.0,The Last Samurai,green tea,Parents,,Sushi
 1561,631902,4,4.0,"Week day lunch,Weekend lunch,Weekend dinner,Late night snack",20.0,Shark Tale,Water,"Parents,Siblings",A little (mild),Sushi
-1562,312320,5,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,,coke,"Parents,Siblings,Friends,Teachers",,Sushi
+1562,312320,5,1.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",9.0,,sake,"Parents,Siblings,Friends,Teachers",,Sushi
 1563,519986,2,4.0,"Week day lunch,Week day dinner,Weekend dinner",18.0,Ratatouille,water,"Friends,Strangers",,Sushi
-1564,626771,4,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.333333333333334,,water,"Parents,Siblings",,Sushi
+1564,626771,4,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,Late night snack",10.333333333333334,jiro dreams of sushi,water,"Parents,Siblings",,Sushi
 1565,407257,5,6.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",25.0,Rush Hour,Cocktail,"Parents,Friends,Strangers",,Sushi
 1566,626883,3,4.0,"Week day lunch,Weekend lunch",15.0,Howl's Moving Castle,Water,"Friends,Strangers",,Sushi
 1567,727339,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",3.0,City Hunter,Miso soup,"Parents,Siblings,Friends",,Sushi
@@ -1606,13 +1606,13 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1584,518733,3,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",3.0,Shang-Chi and the Legend of the Ten Rings,water,Parents,A moderate amount (medium),Sushi
 1585,630378,3,6.0,"Week day lunch,Weekend dinner,At a party,Late night snack",10.0,Rush Hour,Iced Tea,Friends,A moderate amount (medium),Sushi
 1586,631142,5,4.0,"Week day lunch,Weekend lunch",17.0,Your Name.,Water,"Friends,Strangers",A little (mild),Sushi
-1587,519976,3,1.0,"Weekend lunch,Weekend dinner",20.0,,Tea,Friends,,Sushi
+1587,519976,3,1.0,"Weekend lunch,Weekend dinner",20.0,breakfast club,Tea,Friends,,Sushi
 1588,604991,5,4.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",25.0,"Monsters, Inc.",Water,"Friends,Strangers",,Sushi
 1589,522483,3,6.5,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",17.5,Nada,water,"Parents,Friends",A little (mild),Sushi
 1590,629723,5,3.0,"Week day dinner,Weekend dinner",20.0,Heretic,Baijiu,Friends,,Sushi
 1591,387522,4,3.0,"Weekend lunch,Weekend dinner",30.0,Crayon Shin-chan Gaiden: Alien vs. Shinnosuke,Green Tea,"Parents,Siblings,Friends",,Sushi
 1592,613484,5,5.0,"Weekend dinner,At a party",6.0,Aquaman,Ice tea,Parents,A lot (hot),Sushi
-1593,388729,1,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",17.5,,fruit tea,"Parents,Siblings,Friends,Teachers,Strangers",,Sushi
+1593,388729,1,10.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party,Late night snack",17.5,ratatouille,fruit tea,"Parents,Siblings,Friends,Teachers,Strangers",,Sushi
 1594,494373,2,3.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",6.0,Bullet Train,"Barley tea
 ----------",Friends,,Sushi
 1595,630977,3,4.0,"Weekend dinner,Late night snack",25.0,A Minecraft Movie,Water,"Siblings,Friends",A moderate amount (medium),Sushi
@@ -1634,7 +1634,7 @@ Coke","Parents,Siblings,Friends",A moderate amount (medium),Shawarma
 1611,633712,5,4.0,"Week day dinner,Weekend dinner",10.0,Isle of Dogs,Water,Friends,,Sushi
 1612,609556,4,9.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner,At a party",14.0,The Fast and the Furious: Tokyo Drift,Ocha,"Parents,Siblings,Friends",,Sushi
 1613,520090,4,2.0,"Week day lunch,Week day dinner,Weekend lunch,Weekend dinner",12.0,Spirited Away,Green Tea,Parents,,Sushi
-1614,602234,5,5.0,"Week day dinner,Weekend dinner,At a party",8.5,,tea,"Siblings,Friends,Strangers",,Sushi
+1614,602234,5,5.0,"Week day dinner,Weekend dinner,At a party",8.5,shrek,tea,"Siblings,Friends,Strangers",,Sushi
 1615,741592,2,3.0,"Week day lunch,Weekend lunch,At a party",1.49,Your Name.,Water,Strangers,,Sushi
 1616,628547,5,5.0,"Week day lunch,Week day dinner,Weekend lunch,Late night snack",20.0,"Monsters, Inc.",Tea,"Siblings,Friends,Strangers",A little (mild),Sushi
 1617,501513,2,2.0,"Week day dinner,Weekend dinner,At a party",10.0,Midnight Dinner,Soju,"Parents,Friends",A little (mild),Sushi
