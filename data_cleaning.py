@@ -169,3 +169,4 @@ if __name__ == "__main__":
     df = pd.read_csv('clean_results.csv')
     df.hot_sauce_level = df.hot_sauce_level.fillna('None')
     print(df.isnull().sum())
+    df.to_csv("clean_results.csv")
