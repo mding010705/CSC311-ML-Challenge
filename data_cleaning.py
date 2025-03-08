@@ -61,40 +61,45 @@ def detect_capitilized(text: str) -> list[str]:
 def detect_movie(text: str) -> list[str]:
     common_movies = ['spirited away', 'american youg boy', 'stranger things', 'shawarma legend', 'finding nemo', 'jiro dreams of sushi', 'east side sushi', 'home alone',
                      'bbc food channel', 'ready player one', 'ratatouille', 'gilmore girls', 'goodfellas', 'chef', 'the avengers', 'middle eastern', 'mulan', 'za bebsi',
-                     'isle of dogs', 'breakfast club', 'avengers']
-
+                     'isle of dogs', 'breakfast club', 'avengers', 'holes', 'shrek', 'hangover', 'polar express', 'elf', 'home alone', 'spider-man', 'superbad', 'monster inc',
+                     'cloudy with a chance of meatballs', 'scott pilgrim vs the world', 'pleasant goat and big big wolf', 'minions: rise of gru', 'breaking bad', 'deadpool',
+                     'wolverine', 'your name', 'penguins of madagascar']
+    
     try:
         search = ia.search_movie(text.lower())
     except:
         print(f"Attempt {text} failed.")
-        return [movie for movie in common_movies if movie in text.lower()]
+        search = []
     
     if not search:
+        search = [movie for movie in common_movies if movie in text.lower()]
+    else:
         search = [movie['title'] for movie in search]
 
     return search
 
 def detect_drinks(text: str) -> list[str]:
-    common_drinks = ['7up', 'coca-cola', 'ice tea', 'iced tea', 'pepsi', 'fanta', 'mirinda', 'orange juice', 'ginger ale', 'coke', 'soda', 'cola', 'lemonade', 'sprite', 
+    common_drinks = ['7up', 'coca-cola', 'ice tea', 'iced tea', 'pepsi', 'fanta', 'mirinda', 'orange juice', 'ginger ale', 'lemonade', 'sprite', 
                      'kombucha', 'water', 'lemon water', 'pop', 'diet coke', 'ayran yogurt', 'beer', 'juice', 'wine', 'green tea', 'sake', 'tea', 'cocktail', 'bubble tea',
                      'crush', 'canada dry', 'red wine', 'coco cola', 'alcohol', 'chocolate milk', 'fanta', 'soft drink', 'sparkling water', 'mountain dew', 'no drink', 
-                     'alcoholic drink', 'milk']
+                     'alcoholic drink', 'milk', 'coke', 'soda', 'cola', 'mango lassi', 'soy sauce']
+    
     if detect_stopwords(text):
         return [drink for drink in common_drinks if drink in text.lower()]
     else:
         return [text]
 
 
-if __name__ == "__main__":
+def final_cleaning():
     df = pd.read_csv('cleaned_data_combined_modified.csv')
     df = df.rename(columns={"Q1: From a scale 1 to 5, how complex is it to make this food? (Where 1 is the most simple, and 5 is the most complex)": 'food_complexity', 
                             'Q2: How many ingredients would you expect this food item to contain?': 'num_ingredients', 
-                            'Q3: In what setting would you expect this food to be served?': 'serving_setting',
+                            'Q3: In what setting would you expect this food to be served? Please check all that apply': 'serving_setting',
                             'Q4: How much would you expect to pay for one serving of this food item?': 'expected_cost', 
                             'Q5: What movie do you think of when thinking of this food item?': 'related_movie', 
                             'Q6: What drink would you pair with this food item?': 'paired_drink', 
                             "Q7: When you think about this food item, who does it remind you of?": 'associated_people',
-                            'Q8: How much hot sauce would you add to this food ite': 'hot_sauce_level'})
+                            'Q8: How much hot sauce would you add to this food item?': 'hot_sauce_level'})
     
     open("double_check.txt", "w", encoding="utf-8")
 
@@ -158,4 +163,9 @@ if __name__ == "__main__":
                 file.write(line)
 
     df.to_csv("clean_results.csv")
-    df.to_excel("clean_results.xlsx")
+
+if __name__ == "__main__":
+    #final_cleaning()
+    df = pd.read_csv('clean_results.csv')
+    df.hot_sauce_level = df.hot_sauce_level.fillna('None')
+    print(df.isnull().sum())
