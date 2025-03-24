@@ -91,10 +91,14 @@ def detect_drinks(text: str) -> list[str]:
                      'crush', 'canada dry', 'red wine', 'coco cola', 'alcohol', 'chocolate milk', 'fanta', 'soft drink', 'sparkling water', 'mountain dew', 'no drink', 
                      'alcoholic drink', 'milk', 'coke', 'soda', 'cola', 'mango lassi', 'soy sauce']
     
+    drinks = [drink for drink in common_drinks if drink in text.lower()]
+
     if detect_stopwords(text):
-        return [drink for drink in common_drinks if drink in text.lower()]
-    else:
-        return [text]
+        return drinks
+    elif drinks == []:
+        return ['none']
+    
+    return drinks
 
 
 def final_cleaning():
@@ -173,10 +177,7 @@ def final_cleaning():
     df.to_csv("clean_results.csv")
 
 if __name__ == "__main__":
-    #final_cleaning()
+    final_cleaning()
     df = pd.read_csv('clean_results.csv')
-    df.hot_sauce_level = df.hot_sauce_level.fillna('none')
 
     print(df.isna().sum())
-
-    df.to_csv("clean_results.csv")
