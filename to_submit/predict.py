@@ -330,14 +330,19 @@ def final_cleaning(fn: str):
                                     "associated_people", "related_movie",
                                     "movie_genres"]])
     df = pd.concat([x_, y_], axis=1)
-
-    fets = pd.read_csv("clean_results_final.csv")
+    fets = pd.read_csv("/clean_results_final.csv")
     learned_fets = list(fets)
+    df = pd.concat([fets, df], axis=0, join="outer", sort=False)
     df = df.drop(columns=[col for col in df.columns
                           if col not in learned_fets])
-    df.to_csv("clean_results_test.csv")
+    df = df[1644:]
+
+
+
+    df.to_csv("/clean_results_test.csv")
+    df.drop(columns=[col for col in df.columns if col.startswith('Unnamed') or col == 'id'], inplace=True)
     X = df.drop(columns=[col for col in df.columns if col.startswith("Label")]).values
-    y = df["Label"].values
+    y = df["Label"]
     return X, y
 
 
@@ -486,10 +491,9 @@ def predict_all(filename):
     y_series = df[target_column]
     df.drop(columns=[col for col in df.columns if col.startswith('Label')],
             inplace=True)
-    if y_series.dtype == 'O':
-        unique_labels = np.unique(y_series)
-        label_map = {label: idx for idx, label in enumerate(unique_labels)}
-        y_series = y_series.map(label_map)
+    unique_labels = np.unique(y_series)
+    label_map = {label: idx for idx, label in enumerate(unique_labels)}
+    y_series = y_series.map(label_map)
 
     X_train, y_train = df.values, y_series.values
     np.random.seed(42)
@@ -511,7 +515,10 @@ def predict_all(filename):
 
     # clean test data
     X_test, y_test = final_cleaning(filename)
+    y_test = y_test.map(label_map).values
+
     y_test_pred = rf_final.predict(X_test)
+
     final_accuracy = np.mean(y_test_pred == y_test)
 
     print("\nFinal Test Accuracy:", final_accuracy)
