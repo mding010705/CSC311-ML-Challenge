@@ -330,7 +330,7 @@ def final_cleaning(fn: str):
                                     "associated_people", "related_movie",
                                     "movie_genres"]])
     df = pd.concat([x_, y_], axis=1)
-    fets = pd.read_csv("/clean_results_final.csv")
+    fets = pd.read_csv("clean_results_final.csv")
     learned_fets = list(fets)
     df = pd.concat([fets, df], axis=0, join="outer", sort=False)
     df = df.drop(columns=[col for col in df.columns
@@ -339,7 +339,7 @@ def final_cleaning(fn: str):
 
 
 
-    df.to_csv("/clean_results_test.csv")
+    df.to_csv("clean_results_test.csv")
     df.drop(columns=[col for col in df.columns if col.startswith('Unnamed') or col == 'id'], inplace=True)
     df = df.fillna(0)
     X = df.drop(columns=[col for col in df.columns if col.startswith("Label")]).values
@@ -527,7 +527,9 @@ def predict_all(filename):
 
     #print("\nFinal Test Accuracy:", final_accuracy)
 
-    y_pred.tofile(filename, sep = ",")
+    #y_pred.tofile(filename, sep = ",")
+
+    return y_pred
 
 
 
